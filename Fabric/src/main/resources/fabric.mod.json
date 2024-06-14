@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "despawningeggshatch",
+  "version": "4.3",
+
+  "name": "Despawning Eggs Hatch",
+  "description": "Allows chicken eggs on a hay block to hatch into a chick baby just before they despawn.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/despawning-eggs-hatch",
+    "sources": "https://github.com/Serilum/Despawning-Eggs-Hatch",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Despawning%20Eggs%20Hatch"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.despawningeggshatch.ModFabric" ], "modmenu": [ "com.natamus.despawningeggshatch.fabric.config.IntegrateModMenu" ] },
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric": "*",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "collective": ">=7.61"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://ricksouth.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " BirdieMiner",
+	  " Cherriesaurus",
+	  " Jeremy Langford",
+	  " Michael W. S.",
+	  " Rare Students",
+	  " Shana Gitnick",
+	  " Tyler Behl"
+  ]
+}
