@@ -23,7 +23,7 @@ public class EggEvent {
 		}
 		
 		ItemStack itemstack = entityitem.getItem();
-		if (!itemstack.getItem().equals(Items.EGG)) {
+		if (!isHatchableEgg(itemstack)) {
 			return;
 		}
 		
@@ -66,5 +66,11 @@ public class EggEvent {
 				chickencount++;
 			}
 		}
+	}
+
+	private static boolean isHatchableEgg(ItemStack itemstack) {
+		return itemstack.getItem().equals(Items.EGG)
+			|| itemstack.getItem().equals(Items.BLUE_EGG)
+			|| itemstack.getItem().equals(Items.BROWN_EGG);
 	}
 }
