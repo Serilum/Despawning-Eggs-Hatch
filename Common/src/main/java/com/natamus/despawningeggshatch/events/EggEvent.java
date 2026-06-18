@@ -4,7 +4,7 @@ import com.natamus.collective.data.GlobalVariables;
 import com.natamus.despawningeggshatch.config.ConfigHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.animal.chicken.Chicken;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
@@ -56,7 +56,7 @@ public class EggEvent {
 					return;
 				}
 				
-				Chicken chicken = new Chicken(EntityType.CHICKEN, world);
+				Chicken chicken = new Chicken(EntityTypes.CHICKEN, world);
 				chicken.setPos(iposvec.x, iposvec.y+1, iposvec.z);
 				if (ConfigHandler.newHatchlingIsBaby) {
 					chicken.setAge(-24000);
