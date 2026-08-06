@@ -3,9 +3,13 @@ package com.natamus.despawningeggshatch.events;
 import com.natamus.collective.data.GlobalVariables;
 import com.natamus.despawningeggshatch.config.ConfigHandler;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.animal.chicken.Chicken;
+import net.minecraft.world.entity.animal.chicken.ChickenVariant;
+import net.minecraft.world.entity.animal.chicken.ChickenVariants;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -23,7 +27,7 @@ public class EggEvent {
 		}
 		
 		ItemStack itemstack = entityitem.getItem();
-		if (!itemstack.getItem().equals(Items.EGG)) {
+		if (!isHatchableEgg(itemstack)) {
 			return;
 		}
 		
@@ -57,6 +61,13 @@ public class EggEvent {
 				}
 				
 				Chicken chicken = new Chicken(EntityTypes.CHICKEN, world);
+				Holder<ChickenVariant> chickenVariant = world.registryAccess().lookupOrThrow(Registries.CHICKEN_VARIANT).getOrThrow(ChickenVariants.TEMPERATE);
+				if (itemstack.getItem().equals(Items.BLUE_EGG)) {
+					chickenVariant = world.registryAccess().lookupOrThrow(Registries.CHICKEN_VARIANT).getOrThrow(ChickenVariants.COLD);
+				} else if (itemstack.getItem().equals(Items.BROWN_EGG)) {
+					chickenVariant = world.registryAccess().lookupOrThrow(Registries.CHICKEN_VARIANT).getOrThrow(ChickenVariants.WARM);
+				}
+				chicken.setVariant(chickenVariant);
 				chicken.setPos(iposvec.x, iposvec.y+1, iposvec.z);
 				if (ConfigHandler.newHatchlingIsBaby) {
 					chicken.setAge(-24000);
@@ -66,5 +77,11 @@ public class EggEvent {
 				chickencount++;
 			}
 		}
+	}
+
+	private static boolean isHatchableEgg(ItemStack itemstack) {
+		return itemstack.getItem().equals(Items.EGG)
+			|| itemstack.getItem().equals(Items.BLUE_EGG)
+			|| itemstack.getItem().equals(Items.BROWN_EGG);
 	}
 }
