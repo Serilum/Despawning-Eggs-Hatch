@@ -1,6 +1,6 @@
-package com.natamus.despawningeggshatch.neoforge.events;
+package com.serilum.despawningeggshatch.neoforge.events;
 
-import com.natamus.despawningeggshatch.events.EggEvent;
+import com.serilum.despawningeggshatch.events.EggEvent;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.neoforged.neoforge.event.entity.item.ItemExpireEvent;
 import net.neoforged.bus.api.SubscribeEvent;
