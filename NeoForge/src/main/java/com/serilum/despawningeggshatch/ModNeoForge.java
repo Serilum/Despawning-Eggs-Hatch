@@ -1,10 +1,10 @@
-package com.natamus.despawningeggshatch;
+package com.serilum.despawningeggshatch;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.despawningeggshatch.neoforge.config.IntegrateNeoForgeConfig;
-import com.natamus.despawningeggshatch.neoforge.events.NeoForgeEggEvent;
-import com.natamus.despawningeggshatch.util.Reference;
+import com.serilum.despawningeggshatch.neoforge.config.IntegrateNeoForgeConfig;
+import com.serilum.despawningeggshatch.neoforge.events.NeoForgeEggEvent;
+import com.serilum.despawningeggshatch.util.Reference;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModLoadingContext;

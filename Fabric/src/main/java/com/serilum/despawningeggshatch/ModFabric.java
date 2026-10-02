@@ -1,10 +1,10 @@
-package com.natamus.despawningeggshatch;
+package com.serilum.despawningeggshatch;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectiveItemEvents;
-import com.natamus.despawningeggshatch.events.EggEvent;
-import com.natamus.despawningeggshatch.util.Reference;
+import com.serilum.despawningeggshatch.events.EggEvent;
+import com.serilum.despawningeggshatch.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
