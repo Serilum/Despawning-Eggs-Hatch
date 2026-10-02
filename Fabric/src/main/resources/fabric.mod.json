@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "despawningeggshatch",
-  "version": "4.5",
+  "version": "4.6",
 
   "name": "Despawning Eggs Hatch",
   "description": "Allows chicken eggs on a hay block to hatch into a chick baby just before they despawn.",
-  "authors": [ "Rick South" ],
+  "authors": [ "Serilum" ],
   "contact": {
     "homepage": "https://serilum.com/mod/despawning-eggs-hatch",
     "sources": "https://github.com/Serilum/Despawning-Eggs-Hatch",
@@ -16,14 +16,14 @@
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.natamus.despawningeggshatch.ModFabric" ], "modmenu": [ "com.natamus.despawningeggshatch.fabric.config.IntegrateModMenu" ] },
+  "entrypoints": { "main": [ "com.serilum.despawningeggshatch.ModFabric" ], "modmenu": [ "com.serilum.despawningeggshatch.fabric.config.IntegrateModMenu" ] },
 
   "depends": {
     "fabricloader": ">=0.18.0",
     "fabric-api": "*",
     "minecraft": ">=26.3",
     "java": ">=25",
-    "collective": ">=8.39"
+    "collective": ">=8.40"
   },
 
   "custom": {
@@ -38,7 +38,7 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
 	  " Andrean Olgo",

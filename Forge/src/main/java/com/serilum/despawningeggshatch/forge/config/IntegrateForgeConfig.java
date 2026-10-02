@@ -1,7 +1,7 @@
-package com.natamus.despawningeggshatch.forge.config;
+package com.serilum.despawningeggshatch.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.despawningeggshatch.util.Reference;
+import com.serilum.despawningeggshatch.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

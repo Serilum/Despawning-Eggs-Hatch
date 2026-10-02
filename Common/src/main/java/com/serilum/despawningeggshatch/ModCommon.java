@@ -1,6 +1,6 @@
-package com.natamus.despawningeggshatch;
+package com.serilum.despawningeggshatch;
 
-import com.natamus.despawningeggshatch.config.ConfigHandler;
+import com.serilum.despawningeggshatch.config.ConfigHandler;
 
 public class ModCommon {
 

@@ -1,7 +1,7 @@
-package com.natamus.despawningeggshatch.fabric.config;
+package com.serilum.despawningeggshatch.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.despawningeggshatch.util.Reference;
+import com.serilum.despawningeggshatch.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

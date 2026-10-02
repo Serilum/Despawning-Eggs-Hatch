@@ -1,7 +1,7 @@
-package com.natamus.despawningeggshatch.config;
+package com.serilum.despawningeggshatch.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.despawningeggshatch.util.Reference;
+import com.serilum.despawningeggshatch.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

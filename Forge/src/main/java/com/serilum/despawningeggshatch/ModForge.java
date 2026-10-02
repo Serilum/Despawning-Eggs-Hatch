@@ -1,10 +1,10 @@
-package com.natamus.despawningeggshatch;
+package com.serilum.despawningeggshatch;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.despawningeggshatch.forge.config.IntegrateForgeConfig;
-import com.natamus.despawningeggshatch.forge.events.ForgeEggEvent;
-import com.natamus.despawningeggshatch.util.Reference;
+import com.serilum.despawningeggshatch.forge.config.IntegrateForgeConfig;
+import com.serilum.despawningeggshatch.forge.events.ForgeEggEvent;
+import com.serilum.despawningeggshatch.util.Reference;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -30,7 +30,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	ForgeEggEvent.registerEventsInBus();
+		ForgeEggEvent.registerEventsInBus();
 	}
 
 	private static void setGlobalConstants() {
