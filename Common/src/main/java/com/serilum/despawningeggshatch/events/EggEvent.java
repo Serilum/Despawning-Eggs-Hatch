@@ -1,7 +1,7 @@
-package com.natamus.despawningeggshatch.events;
+package com.serilum.despawningeggshatch.events;
 
 import com.natamus.collective.data.GlobalVariables;
-import com.natamus.despawningeggshatch.config.ConfigHandler;
+import com.serilum.despawningeggshatch.config.ConfigHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
